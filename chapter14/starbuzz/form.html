@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Starbuzz Bean Machine</title>
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="GET">
+      <p>Choose a coffee:
+        <select name="beans">
+          <option value="Home seat">Home seat</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Guatemala">Guatemala</option>
+          <option value="Kenia">Kenia</option>
+        </select>
+      </p>
+
+      <p>Type: <br />
+        <input type="radio" name="beantype" value="beans" />Whole beans <br />
+        <input type="radio" name="beantype" value="ground" checked="checked" />Ground
+      </p>
+
+      <p>Additional capabilities <br />
+        <input type="checkbox" name="extras[]" value="gift wrap" />Gift wrap<br />
+        <input type="checkbox" name="extras[]" value="catalog" checked="checked" />Delivery catalog with the order
+      </p>
+
+      <p>Delivery to address: <br />
+        Name:     <input type="text" name="name" /> <br />
+        Address:  <input type="text" name="address" /> <br />
+        City:     <input type="text" name="city" /> <br />
+        Country:  <input type="text" name="state" /> <br />
+        Index:    <input type="text" name="zip" /> <br />
+
+        <p>Client Comments: <br />
+          <textarea name="comments" rows="10" cols="48"></textarea>
+        </p>
+
+      </p>
+      <p>
+        <input type="submit" value="Order now" />
+      </p>
+    </form>
+
+
+  </body>
+</html>
+
